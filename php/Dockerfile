@@ -15,6 +15,4 @@ RUN curl -sSk https://getcomposer.org/installer | php -- --disable-tls && \
 COPY ./ports.conf /etc/apache2/ports.conf
 COPY ./vhosts/apache.conf /etc/apache2/site-enabled/000-default.conf
 
-COPY ../project /var/www/html
-
 WORKDIR /var/www/
