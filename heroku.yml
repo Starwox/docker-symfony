@@ -1,6 +1,15 @@
 build:
   docker:
     web: php/Dockerfile
-
 run:
-  web: docker-compose up
+  web: bundle exec puma -C config/puma.rb
+  worker:
+    command:
+      - bin/console d:d:c
+      - bin/console d:m:m
+
+release:
+  image:
+    - mysql
+    - phpmyadmin
+    - dockertester_www
