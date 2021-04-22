@@ -74,20 +74,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="vhosts.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/vhosts/vhosts.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="33" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
               <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="heroku.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/heroku.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -108,6 +108,7 @@
         <option value="$PROJECT_DIR$/project/src/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/project/src/Controller/API/UserApiController.php" />
         <option value="$PROJECT_DIR$/project/.gitignore" />
+        <option value="$PROJECT_DIR$/heroku.yml" />
       </list>
     </option>
   </component>
@@ -265,51 +266,6 @@
               <item name="dockerTester" type="b2602c69:ProjectViewProjectNode" />
               <item name="dockerTester" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dockerTester" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dockerTester" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dockerTester" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dockerTester" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dockerTester" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dockerTester" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dockerTester" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dockerTester" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dockerTester" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dockerTester" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="API" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dockerTester" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dockerTester" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dockerTester" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dockerTester" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -348,12 +304,12 @@
       <option name="presentableId" value="Default" />
       <updated>1619097576696</updated>
       <workItem from="1619097578217" duration="3806000" />
-      <workItem from="1619101594749" duration="564000" />
+      <workItem from="1619101594749" duration="763000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="942000" />
+    <option name="totallyTimeSpent" value="1141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1680" height="940" extended-state="0" />
@@ -510,6 +466,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heroku.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
