@@ -1,0 +1,43 @@
+version: "3.8"
+services:
+
+    mysql:
+        image: mysql
+        container_name: mysql
+        restart: always
+        volumes:
+            - db-data:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: api-centric
+        networks:
+            - dev
+    phpmyadmin:
+        image: phpmyadmin
+        container_name: phpmyadmin
+        restart: always
+        depends_on:
+            - mysql
+        ports:
+            - 8080:80
+        environment:
+            PMA_HOST: mysql
+        networks:
+            - dev
+    www:
+        build: php
+        container_name: www
+        ports:
+            - "8741:80"
+        volumes:
+            - ./php/vhosts:/etc/apache2/sites-enabled
+            - ./:/var/www
+        restart: always
+        networks:
+            - dev
+
+networks:
+    dev:
+
+volumes:
+    db-data:

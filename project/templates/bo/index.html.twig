@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+{% block title %}{% endblock %}
+    {# Run `composer require symfony/webpack-encore-bundle`
+       and uncomment the following Encore helpers to start using Symfony UX #}
+    {% block stylesheets %}
+    {% endblock %}
+
+    {% block javascripts %}
+    {% endblock %}
+
+{% block body %}
+   <div style="
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+    ">
+       <a href="{{ link_stripe }}" style="font-weight: bold;">Billing Info with Stripe</a>
+   </div>
+{% endblock %}
+
