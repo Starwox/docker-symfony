@@ -1,6 +1,6 @@
 FROM php:7.4-apache
 
-RUN echo "ServerName ocker-api-sf.herokuapp.com" >> /etc/apache2/apache2.conf
+RUN echo "ServerName docker-api-sf.herokuapp.com" >> /etc/apache2/apache2.conf
 
 RUN apt-get update && apt-get install -qy apache2
 RUN sed -i "s/Listen 80/Listen $PORT/g" /etc/apache2/ports.conf
