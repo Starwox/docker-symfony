@@ -7,9 +7,3 @@ run:
     command:
       - bin/console d:d:c
       - bin/console d:m:m
-
-release:
-  image:
-    - mysql
-    - phpmyadmin
-    - dockertester_www
