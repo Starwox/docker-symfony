@@ -2,9 +2,6 @@ FROM php:7.4-apache
 
 RUN echo "ServerName docker-api-sf.herokuapp.com" >> /etc/apache2/apache2.conf
 
-RUN apt-get update && apt-get install -qy apache2
-RUN sed -i "s/Listen 80/Listen $PORT/g" /etc/apache2/ports.conf
-
 RUN apt-get update \
     && apt-get install -y --no-install-recommends locales apt-utils git libicu-dev g++ libpng-dev libxml2-dev libzip-dev libonig-dev libxslt-dev;
 
@@ -18,6 +15,12 @@ RUN curl -sSk https://getcomposer.org/installer | php -- --disable-tls && \
 RUN docker-php-ext-configure intl
 RUN docker-php-ext-install pdo pdo_mysql gd opcache intl zip calendar dom mbstring zip gd xsl
 RUN pecl install apcu && docker-php-ext-enable apcu
+
+RUN rm /var/www/html/index.html
+COPY index.php /var/www/html/index.php
+
+COPY ./ports.conf /etc/apache2/ports.conf
+COPY ./vhosts/vhosts.conf /etc/apache2/sites-enabled/000-default.conf
 
 WORKDIR /var/www/
 
