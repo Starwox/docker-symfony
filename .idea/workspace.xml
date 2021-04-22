@@ -87,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/heroku.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -304,12 +304,12 @@
       <option name="presentableId" value="Default" />
       <updated>1619097576696</updated>
       <workItem from="1619097578217" duration="3806000" />
-      <workItem from="1619101594749" duration="763000" />
+      <workItem from="1619101594749" duration="1271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1141000" />
+    <option name="totallyTimeSpent" value="1649000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1680" height="940" extended-state="0" />
@@ -323,7 +323,7 @@
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.3154122" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.6403823" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -472,7 +472,7 @@
     <entry file="file://$PROJECT_DIR$/heroku.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>

@@ -2,6 +2,9 @@ FROM php:7.4-apache
 
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
+COPY ./docker/run-apache2.sh /usr/local/bin/
+CMD [ "run-apache2.sh" ]
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends locales apt-utils git libicu-dev g++ libpng-dev libxml2-dev libzip-dev libonig-dev libxslt-dev;
 
@@ -17,3 +20,5 @@ RUN docker-php-ext-install pdo pdo_mysql gd opcache intl zip calendar dom mbstri
 RUN pecl install apcu && docker-php-ext-enable apcu
 
 WORKDIR /var/www/
+
+CMD ["find", "/etc/apache2"]
