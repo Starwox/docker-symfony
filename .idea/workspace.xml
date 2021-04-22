@@ -98,8 +98,8 @@
       <file leaf-file-name="heroku.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/heroku.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            <state relative-caret-position="95">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -121,13 +121,13 @@
         <option value="$PROJECT_DIR$/ports.conf" />
         <option value="$PROJECT_DIR$/php/vhosts/index.php" />
         <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/heroku.yml" />
         <option value="$PROJECT_DIR$/php/Dockerfile.web" />
         <option value="$PROJECT_DIR$/php/vhosts/vhosts.conf" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/php/Dockerfile" />
         <option value="$PROJECT_DIR$/php/vhosts/apache.conf" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/heroku.yml" />
       </list>
     </option>
   </component>
@@ -327,16 +327,15 @@
       <updated>1619097576696</updated>
       <workItem from="1619097578217" duration="3806000" />
       <workItem from="1619101594749" duration="7465000" />
-      <workItem from="1619126108459" duration="2765000" />
+      <workItem from="1619126108459" duration="3035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10608000" />
+    <option name="totallyTimeSpent" value="10878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1680" height="940" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="1" weight="0.25579977" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -587,8 +586,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/heroku.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        <state relative-caret-position="95">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
