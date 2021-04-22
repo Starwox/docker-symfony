@@ -1,10 +1,9 @@
 FROM php:7.4-apache
 
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+RUN echo "ServerName ocker-api-sf.herokuapp.com" >> /etc/apache2/apache2.conf
 
 RUN apt-get update && apt-get install -qy apache2
 RUN sed -i "s/Listen 80/Listen $PORT/g" /etc/apache2/ports.conf
-RUN rm -rf /etc/apache2
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends locales apt-utils git libicu-dev g++ libpng-dev libxml2-dev libzip-dev libonig-dev libxslt-dev;
