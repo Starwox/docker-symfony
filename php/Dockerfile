@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM geerlingguy/php-apache:latest
 
 COPY /index.php /var/www/html/index.php
 
