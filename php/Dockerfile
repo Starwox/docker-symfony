@@ -16,7 +16,6 @@ RUN docker-php-ext-configure intl
 RUN docker-php-ext-install pdo pdo_mysql gd opcache intl zip calendar dom mbstring zip gd xsl
 RUN pecl install apcu && docker-php-ext-enable apcu
 
-RUN rm /var/www/html/index.html
 COPY index.php /var/www/html/index.php
 
 COPY ./ports.conf /etc/apache2/ports.conf
