@@ -58,7 +58,6 @@ class DefaultController extends AbstractController
             -u sk_test_51IiMoIATaLjBTLoSd7xkbIiLv7TrDXNjMdiw6oMGmz5EAaEtQQk5puZkWIj29KYFxodkwpBSeNX7biX4oRsBMLB000Fic84Lt0: \
             -d customer=cus_JLX6tKkYb6hPKi \
             -d return_url="http://localhost:8741/stripe"
-
         End info */
         $url = "https://billing.stripe.com/session/_JLkZekrnN5uzCbjbHjBLM2HxMyvwT8G";
 

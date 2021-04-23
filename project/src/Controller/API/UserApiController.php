@@ -100,6 +100,15 @@ class UserApiController extends AbstractController
         }
 
         $password = password_hash($plainPassword, PASSWORD_DEFAULT);
+        $apiKey = uniqid(rand(), true);
+
+        $userRepo = $this->getDoctrine()->getRepository(User::class);
+        $apiKeyFinder = $userRepo->findBy([
+            "apiKey" => $apiKey
+        ]);
+
+        if (!empty($apiKeyFinder))
+            $apiKey = uniqid(rand(), true);
 
         $user = new User();
         $user->setEmail($email);
@@ -108,6 +117,7 @@ class UserApiController extends AbstractController
         $user->setLastname($lastname);
         $user->setAge($age);
         $user->setJob($job);
+        $user->setApiKey($apiKey);
 
         $this->em->persist($user);
         $this->em->flush($user);
@@ -247,6 +257,10 @@ class UserApiController extends AbstractController
             ]);
         }
 
+        $user[0]->setlastLog(new \DateTime("now"));
+        $this->em->persist($user[0]);
+        $this->em->flush();
+
         return $this->json([
             "status" => 200,
             "data" => [
@@ -258,7 +272,8 @@ class UserApiController extends AbstractController
                 "lastname" => $user[0]->getLastname(),
                 "age" => $user[0]->getAge(),
                 "job" => $user[0]->getJob(),
-            ]
+            ],
+            "api_key" => $user[0]->getApiKey()
         ]);
     }
 }
