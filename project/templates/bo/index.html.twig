@@ -9,13 +9,20 @@
     {% endblock %}
 
 {% block body %}
-   <div style="
-        margin: auto;
-        width: 50%;
-        border: 3px solid green;
-        padding: 10px;
+    <div style="  margin: auto;
+            width: 15%;
     ">
-       <a href="{{ link_stripe }}" style="font-weight: bold;">Billing Info with Stripe</a>
-   </div>
+        <button style="background-color: #55d3d2;
+        border: none;
+        outline: none;
+        margin-top: 50px;
+        border-radius: 100px;
+        width: 200px;
+        height: 42px;
+    ">
+            <a href="{{ link_stripe }}" style="text-decoration: none;
+        color: white;">Billing Info with Stripe</a>
+        </button>
+    </div>
 {% endblock %}
 

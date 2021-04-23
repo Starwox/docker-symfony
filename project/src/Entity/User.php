@@ -58,6 +58,16 @@ class User
      */
     private $job;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $apiKey;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $lastLog;
+
     public function __construct()
     {
         $this->startedAt = new \DateTime('now');
@@ -169,6 +179,30 @@ class User
     public function setJob(?string $job): self
     {
         $this->job = $job;
+
+        return $this;
+    }
+
+    public function getApiKey(): ?string
+    {
+        return $this->apiKey;
+    }
+
+    public function setApiKey(string $apiKey): self
+    {
+        $this->apiKey = $apiKey;
+
+        return $this;
+    }
+
+    public function getLastLog(): ?\DateTimeInterface
+    {
+        return $this->lastLog;
+    }
+
+    public function setLastLog(?\DateTimeInterface $lastLog): self
+    {
+        $this->lastLog = $lastLog;
 
         return $this;
     }

@@ -109,8 +109,8 @@ class UserApiController extends AbstractController
         $user->setAge($age);
         $user->setJob($job);
 
-        //$this->em->persist($user);
-        //$this->em->flush($user);
+        $this->em->persist($user);
+        $this->em->flush($user);
 
         //MAIL CHIMP
         $mailchimp = new \MailchimpMarketing\ApiClient();
